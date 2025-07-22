@@ -8,6 +8,8 @@ fi
 # - https://github.com/renskiy/cron-docker-image/blob/5600db37acf841c6d7a8b4f3866741bada5b4622/debian/start-cron#L34-L36
 # - https://blog.knoldus.com/running-a-cron-job-in-docker-container/
 
+# Teste 2
+
 declare -p | grep -Ev 'BASHOPTS|BASH_VERSINFO|EUID|PPID|SHELLOPTS|UID' >/container.env
 
 { for cron_job in "$@"; do echo -e "SHELL=/bin/bash
